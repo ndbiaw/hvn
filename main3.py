@@ -60,5 +60,3 @@ def main():
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("Công cụ hỗ trợ đăng kí tài khoản HentaiVN bởi NDBIAW")
 	inputemail()
-if __name__ == "__main__":
-    main()
