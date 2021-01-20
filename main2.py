@@ -43,11 +43,11 @@ def inputday(days, minimum=1, maximum=31):
 		sys.exit()
 def inputpassword():
 	password = input("Nhập mật khẩu của bạn:")
-	if len(password) < 8:
+	if len(password) > 8:
 		print("Mật khẩu phải có từ 8 kí tự trở lên!")
-	sys.exit()
 	else:
-		inputday()
+		print("Mật khẩu phải có từ 8 kí tự trở lên!")
+		sys.exit()
 def inputemail():
 	email = input("Nhập gmail của bạn:")
 	if len(email) > 42:
