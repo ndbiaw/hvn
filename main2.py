@@ -50,11 +50,13 @@ def inputpassword():
 		sys.exit()
 def inputemail():
 	email = input("Nhập gmail của bạn:")
-	if len(email) > 42:
-		print ("Xin hãy nhập định dạng gmail hợp lệ!")else:
+	if len(email) > 43:
 		emails = email.replace('@gmail.com', '', 42)
 		gmail = emails.replace('.', '', 42)
 		inputpassword()
+	else:
+		print ("Xin hãy nhập định dạng gmail hợp lệ!")
+		sys.exit()
 def main():
 	os.system('cls' if os.name == 'nt' else 'clear')
 	print("Công cụ hỗ trợ đăng kí tài khoản HentaiVN bởi NDBIAW")
